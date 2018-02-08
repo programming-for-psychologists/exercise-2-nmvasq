@@ -28,7 +28,7 @@ def feedback(con):
 
 while 'q' not in event.getKeys(keyList = ['q']): #built in a rough escape option . . .
     binary = random.choice([0,1])
-    nameShown = random.choice(ran_name())
+    nameShown = random.choice(ran_name()).strip()
     randomNameStim.setText(nameShown)
     fixStim.draw()
     win.flip()
